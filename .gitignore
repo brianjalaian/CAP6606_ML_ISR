@@ -1,0 +1,10 @@
+# Python virtual environments
+.venv/
+
+# Jupyter Book build outputs
+_build/
+.jupyter_cache/
+
+# Python cache
+__pycache__/
+*.pyc

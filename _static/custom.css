@@ -1,0 +1,80 @@
+/* Custom UWF styling for the CAP 6606 course book */
+:root {
+  --uwf-navy: #0C2340;
+  --uwf-teal: #00A3AD;
+  --uwf-light: #F1F9FB;
+}
+
+body {
+  background-color: var(--uwf-light);
+}
+
+a {
+  color: var(--uwf-teal);
+}
+
+a:visited {
+  color: #00838F;
+}
+
+a:hover,
+a:focus {
+  color: #14B6BF;
+}
+
+.uwf-navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding: 0.25rem 0;
+}
+
+.uwf-button {
+  background: var(--uwf-teal);
+  color: white !important;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: background 0.2s ease-in-out;
+}
+
+.uwf-button:hover {
+  background: #14B6BF;
+}
+
+.uwf-footer {
+  padding: 1rem 0;
+  text-align: center;
+  color: white;
+  background: var(--uwf-navy);
+  font-size: 0.9rem;
+}
+
+.sphinx-book-theme nav.bd-links li.toctree-l1 > a {
+  font-weight: 600;
+}
+
+.sphinx-book-theme div.bd-sidebar {
+  background: white;
+}
+
+.sphinx-book-theme .bd-header {
+  background-color: var(--uwf-navy);
+}
+
+.sphinx-book-theme .bd-header a,
+.sphinx-book-theme .bd-header button {
+  color: white;
+}
+
+.sphinx-book-theme .current > a,
+.sphinx-book-theme .current > a .toc-entry span {
+  color: var(--uwf-teal) !important;
+}
+
+img.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
