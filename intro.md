@@ -13,16 +13,15 @@ Bookmark this site and check back each week for updated readings, coding labs, a
 ## How to Use This Book
 
 - Navigate chapters from the left sidebar to explore weekly topics.
-- Launch notebooks directly in cloud GPU environments using the badges at the top of each chapter.
+- Launch notebooks directly in cloud environments using the badges at the top of each chapter.
 - Use the "View on GitHub" button to propose improvements or suggest clarifications.
-- Activate lightweight live code demos only on pages explicitly marked with `thebe: true`.
 
 ## Course Outcomes
 
 By the end of the term you will be able to:
 
-1. Evaluate modern machine learning algorithms for intelligent systems applications.
-2. Design, train, and deploy deep learning models for perception, planning, and control.
-3. Integrate learned behaviors into robotic platforms with attention to safety and ethics.
+1. Apply ensemble methods (random forests, gradient boosting) to structured tabular data.
+2. Interpret model predictions and extract insights from feature importance analysis.
+3. Evaluate trade-offs between tree-based methods and neural network approaches for different problem types.
 
-Continue to the next chapter to begin with an overview of the course and tooling.
+Continue to the first chapter to learn about random forests and tabular data modeling.

@@ -12,7 +12,7 @@ copyright: "2025, University of West Florida"
 only_build_toc_files: true
 
 repository:
-  url: https://github.com/brianjalaian/CAP6606_ml_for_intelligent_systems
+  url: https://github.com/brianjalaian/CAP6606_ML_ISR
   path_to_book: ""
   branch: main
 
@@ -41,16 +41,16 @@ html:
   use_issues_button: true
   use_edit_page_button: true
   navbar_number_sections: true
-  baseurl: https://brianjalaian.github.io/CAP6606_ml_for_intelligent_systems/
+  baseurl: https://brianjalaian.github.io/CAP6606_ML_ISR/
   home_page_in_toc: true
   theme:
     name: sphinx_book_theme
     options:
-      repository_url: https://github.com/brianjalaian/CAP6606_ml_for_intelligent_systems
+      repository_url: https://github.com/brianjalaian/CAP6606_ML_ISR
       path_to_docs: ""
       extra_navbar: |
         <div class="uwf-navbar">
-          <a class="uwf-button" href="https://colab.research.google.com/github/brianjalaian/CAP6606_ml_for_intelligent_systems" target="_blank" rel="noopener">Open in Colab</a>
+          <a class="uwf-button" href="https://colab.research.google.com/github/brianjalaian/CAP6606_ML_ISR" target="_blank" rel="noopener">Open in Colab</a>
         </div>
       extra_footer: |
         <div class="uwf-footer">© University of West Florida · Intelligent Systems & Robotics</div>

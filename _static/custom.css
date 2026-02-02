@@ -2,26 +2,255 @@
 :root {
   --uwf-navy: #0C2340;
   --uwf-teal: #00A3AD;
-  --uwf-light: #F1F9FB;
+  --uwf-teal-light: #4DD0E1;
 }
 
-body {
-  background-color: var(--uwf-light);
+/* ============ LIGHT THEME ============ */
+html[data-theme="light"] {
+  --pst-color-background: #ffffff;
+  --pst-color-on-background: #333333;
+  --pst-color-surface: #f8f9fa;
+  --pst-color-on-surface: #333333;
+  --pst-color-text-base: #333333;
+  --pst-color-text-muted: #6c757d;
+  --pst-color-link: #00838F;
+  --pst-color-link-hover: #00A3AD;
 }
 
-a {
+html[data-theme="light"] body {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+html[data-theme="light"] .bd-main,
+html[data-theme="light"] .bd-content,
+html[data-theme="light"] .bd-article {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+html[data-theme="light"] h1,
+html[data-theme="light"] h2,
+html[data-theme="light"] h3,
+html[data-theme="light"] h4,
+html[data-theme="light"] h5,
+html[data-theme="light"] h6 {
+  color: var(--uwf-navy) !important;
+}
+
+html[data-theme="light"] p,
+html[data-theme="light"] li,
+html[data-theme="light"] td,
+html[data-theme="light"] th {
+  color: #333333;
+}
+
+html[data-theme="light"] a {
   color: var(--uwf-teal);
 }
 
-a:visited {
-  color: #00838F;
-}
-
-a:hover,
-a:focus {
+html[data-theme="light"] a:hover {
   color: #14B6BF;
 }
 
+html[data-theme="light"] .bd-sidebar,
+html[data-theme="light"] .bd-sidebar-primary {
+  background: #f8f9fa !important;
+}
+
+html[data-theme="light"] .bd-sidebar a {
+  color: #495057;
+}
+
+html[data-theme="light"] .bd-sidebar a:hover {
+  color: var(--uwf-teal);
+}
+
+html[data-theme="light"] .bd-sidebar-secondary {
+  background-color: #ffffff !important;
+}
+
+html[data-theme="light"] pre,
+html[data-theme="light"] code {
+  background-color: #f5f5f5 !important;
+  color: #333333;
+}
+
+html[data-theme="light"] .highlight {
+  background-color: #f5f5f5 !important;
+}
+
+html[data-theme="light"] table {
+  background-color: #ffffff;
+}
+
+html[data-theme="light"] th {
+  background-color: #f8f9fa !important;
+  color: #333333;
+}
+
+html[data-theme="light"] td {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+html[data-theme="light"] .bd-footer {
+  background-color: #f8f9fa !important;
+  color: #6c757d;
+}
+
+html[data-theme="light"] .prev-next-area a {
+  color: var(--uwf-teal) !important;
+}
+
+/* ============ DARK THEME ============ */
+html[data-theme="dark"] {
+  --pst-color-background: #1a1a2e;
+  --pst-color-on-background: #e8e8e8;
+  --pst-color-surface: #16213e;
+  --pst-color-on-surface: #e8e8e8;
+  --pst-color-text-base: #e8e8e8;
+  --pst-color-text-muted: #b0b0b0;
+  --pst-color-link: #4DD0E1;
+  --pst-color-link-hover: #80DEEA;
+}
+
+html[data-theme="dark"] body {
+  background-color: #1a1a2e;
+  color: #e8e8e8;
+}
+
+html[data-theme="dark"] .bd-main,
+html[data-theme="dark"] .bd-content,
+html[data-theme="dark"] .bd-article {
+  background-color: #1a1a2e;
+  color: #e8e8e8;
+}
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6 {
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] p,
+html[data-theme="dark"] li,
+html[data-theme="dark"] td,
+html[data-theme="dark"] th {
+  color: #e8e8e8;
+}
+
+html[data-theme="dark"] a {
+  color: var(--uwf-teal-light);
+}
+
+html[data-theme="dark"] a:hover {
+  color: #80DEEA;
+}
+
+html[data-theme="dark"] .bd-sidebar,
+html[data-theme="dark"] .bd-sidebar-primary {
+  background: #16213e !important;
+}
+
+html[data-theme="dark"] .bd-sidebar a {
+  color: #b0b0b0;
+}
+
+html[data-theme="dark"] .bd-sidebar a:hover {
+  color: #4DD0E1;
+}
+
+html[data-theme="dark"] .bd-sidebar-secondary {
+  background-color: #1a1a2e !important;
+}
+
+html[data-theme="dark"] .bd-sidebar-secondary a {
+  color: #b0b0b0;
+}
+
+html[data-theme="dark"] pre,
+html[data-theme="dark"] code {
+  background-color: #0f0f23 !important;
+  color: #e8e8e8;
+}
+
+html[data-theme="dark"] .highlight {
+  background-color: #0f0f23 !important;
+}
+
+html[data-theme="dark"] table {
+  background-color: #16213e;
+}
+
+html[data-theme="dark"] th {
+  background-color: #0f0f23 !important;
+  color: #ffffff;
+}
+
+html[data-theme="dark"] td {
+  background-color: #16213e;
+  color: #e8e8e8;
+}
+
+html[data-theme="dark"] .bd-footer {
+  background-color: #0f0f23 !important;
+  color: #b0b0b0;
+}
+
+html[data-theme="dark"] .prev-next-area a {
+  color: var(--uwf-teal-light) !important;
+}
+
+html[data-theme="dark"] .admonition {
+  background-color: #16213e !important;
+}
+
+html[data-theme="dark"] .admonition-title {
+  background-color: #0f0f23 !important;
+}
+
+html[data-theme="dark"] .sd-card {
+  background-color: #16213e !important;
+  color: #e8e8e8;
+}
+
+html[data-theme="dark"] .search-button {
+  background: #16213e !important;
+  color: #b0b0b0 !important;
+}
+
+/* ============ SHARED STYLES ============ */
+/* Header - same for both themes */
+.bd-header {
+  background-color: var(--uwf-navy) !important;
+}
+
+.bd-header a,
+.bd-header button {
+  color: white !important;
+}
+
+/* Current page highlight */
+.current > a,
+.active > a {
+  font-weight: 600;
+}
+
+html[data-theme="light"] .current > a,
+html[data-theme="light"] .active > a {
+  color: var(--uwf-teal) !important;
+}
+
+html[data-theme="dark"] .current > a,
+html[data-theme="dark"] .active > a {
+  color: var(--uwf-teal-light) !important;
+}
+
+/* UWF custom button */
 .uwf-navbar {
   display: flex;
   justify-content: flex-end;
@@ -43,34 +272,13 @@ a:focus {
   background: #14B6BF;
 }
 
+/* Footer */
 .uwf-footer {
   padding: 1rem 0;
   text-align: center;
   color: white;
   background: var(--uwf-navy);
   font-size: 0.9rem;
-}
-
-.sphinx-book-theme nav.bd-links li.toctree-l1 > a {
-  font-weight: 600;
-}
-
-.sphinx-book-theme div.bd-sidebar {
-  background: white;
-}
-
-.sphinx-book-theme .bd-header {
-  background-color: var(--uwf-navy);
-}
-
-.sphinx-book-theme .bd-header a,
-.sphinx-book-theme .bd-header button {
-  color: white;
-}
-
-.sphinx-book-theme .current > a,
-.sphinx-book-theme .current > a .toc-entry span {
-  color: var(--uwf-teal) !important;
 }
 
 img.align-center {

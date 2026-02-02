@@ -4,10 +4,7 @@ parts:
   - caption: "Course Modules"
     numbered: true
     chapters:
-      - file: notebooks/01_intro
-      - file: notebooks/02_transformers
-      - file: notebooks/03_robotic_applications
-      - file: notebooks/lightweight_demo
+      - file: notebooks/01_random_forests_tabular
   - caption: "Lectures"
     chapters:
       - file: lectures/lectures

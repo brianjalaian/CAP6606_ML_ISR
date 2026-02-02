@@ -8,3 +8,9 @@ _build/
 # Python cache
 __pycache__/
 *.pyc
+
+# Resources (copyrighted materials)
+resources/
+
+# macOS
+.DS_Store
