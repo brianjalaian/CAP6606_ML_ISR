@@ -1,0 +1,29 @@
+[build]
+  publish = "_build/html"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Redirect rules (also in _redirects, but toml takes precedence)
+[[redirects]]
+  from = "/notebooks/*"
+  to = "/login.html"
+  status = 200
+  force = true
+  conditions = {Role = ["promo", "authenticated"]}
+
+[[redirects]]
+  from = "/modules/*"
+  to = "/login.html"
+  status = 200
+  force = true
+  conditions = {Role = ["promo", "authenticated"]}
+
+# Headers for security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

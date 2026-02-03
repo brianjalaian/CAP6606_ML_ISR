@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enter Promo Code | ML for Intelligent Systems</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 3rem;
+      max-width: 420px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    input {
+      width: 100%;
+      padding: 1rem;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+    input::placeholder {
+      color: rgba(255, 255, 255, 0.4);
+      text-transform: none;
+      letter-spacing: normal;
+    }
+    input:focus {
+      outline: none;
+      border-color: #4f46e5;
+    }
+    .btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      margin: 0.5rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: none;
+      width: 100%;
+    }
+    .btn:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    .btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+    .btn-primary {
+      background: #4f46e5;
+      color: white;
+    }
+    .message {
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+      display: none;
+    }
+    .message.success {
+      background: rgba(34, 197, 94, 0.2);
+      border: 1px solid #22c55e;
+      display: block;
+    }
+    .message.error {
+      background: rgba(239, 68, 68, 0.2);
+      border: 1px solid #ef4444;
+      display: block;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 1.5rem;
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .back-link:hover {
+      color: white;
+    }
+    .info-box {
+      background: rgba(79, 70, 229, 0.2);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .needs-login {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎟️ Enter Promo Code</h1>
+    <p class="subtitle">Unlock full access to course materials</p>
+
+    <!-- Must be logged in first -->
+    <div class="needs-login">
+      <div class="info-box">
+        ⚠️ Please sign in or create an account first, then return here to enter your promo code.
+      </div>
+      <button class="btn btn-primary" onclick="netlifyIdentity.open('signup')">
+        Create Account
+      </button>
+      <button class="btn" style="background: rgba(255,255,255,0.2); color: white;" onclick="netlifyIdentity.open('login')">
+        Sign In
+      </button>
+    </div>
+
+    <!-- Promo form (shown when logged in) -->
+    <div class="promo-form" style="display: none;">
+      <div class="info-box">
+        Enter the promo code provided by your instructor to unlock all course materials.
+      </div>
+
+      <form id="promo-form">
+        <div class="form-group">
+          <label for="promo-code">Promo Code</label>
+          <input
+            type="text"
+            id="promo-code"
+            placeholder="e.g., UWF-ML2026"
+            autocomplete="off"
+            required
+          >
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit-btn">
+          Validate Code
+        </button>
+      </form>
+
+      <div id="message" class="message"></div>
+    </div>
+
+    <a href="/login.html" class="back-link">← Back to login</a>
+  </div>
+
+  <script>
+    const form = document.getElementById('promo-form');
+    const messageEl = document.getElementById('message');
+    const submitBtn = document.getElementById('submit-btn');
+    const promoForm = document.querySelector('.promo-form');
+    const needsLogin = document.querySelector('.needs-login');
+
+    // Check login state
+    netlifyIdentity.on('init', user => updateUI(user));
+    netlifyIdentity.on('login', user => updateUI(user));
+    netlifyIdentity.on('logout', () => updateUI(null));
+
+    function updateUI(user) {
+      if (user) {
+        promoForm.style.display = 'block';
+        needsLogin.style.display = 'none';
+      } else {
+        promoForm.style.display = 'none';
+        needsLogin.style.display = 'block';
+      }
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const code = document.getElementById('promo-code').value.trim().toUpperCase();
+      const user = netlifyIdentity.currentUser();
+
+      if (!user) {
+        showMessage('Please sign in first.', 'error');
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Validating...';
+
+      try {
+        const response = await fetch('/.netlify/functions/validate-code', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${user.token.access_token}`
+          },
+          body: JSON.stringify({ code })
+        });
+
+        const data = await response.json();
+
+        if (response.ok && data.success) {
+          showMessage('✅ Code accepted! Redirecting to course...', 'success');
+          // Refresh token to get new roles
+          await user.jwt(true);
+          setTimeout(() => window.location.href = '/', 2000);
+        } else {
+          showMessage(data.error || 'Invalid promo code. Please try again.', 'error');
+        }
+      } catch (err) {
+        showMessage('Error validating code. Please try again.', 'error');
+        console.error(err);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Validate Code';
+      }
+    });
+
+    function showMessage(text, type) {
+      messageEl.textContent = text;
+      messageEl.className = `message ${type}`;
+    }
+  </script>
+</body>
+</html>
