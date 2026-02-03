@@ -2,9 +2,9 @@
 title: "Welcome"
 ---
 
-# CAP 6606 — Machine Learning for Intelligent Systems & Robotics
+# Machine Learning for Intelligent Systems & Robotics
 
-Welcome to the official course book for **CAP 6606** at the **University of West Florida**. This living resource curates readings, programming notebooks, and lecture material to support graduate students as they explore machine learning-driven autonomy.
+Welcome! This interactive book curates readings, programming notebooks, and materials to help you explore machine learning for intelligent systems and robotics.
 
 ```{important}
 Bookmark this site and check back each week for updated readings, coding labs, and lecture links.
@@ -16,9 +16,9 @@ Bookmark this site and check back each week for updated readings, coding labs, a
 - Launch notebooks directly in cloud environments using the badges at the top of each chapter.
 - Use the "View on GitHub" button to propose improvements or suggest clarifications.
 
-## Course Outcomes
+## Learning Outcomes
 
-By the end of the term you will be able to:
+By exploring this book you will be able to:
 
 1. Apply ensemble methods (random forests, gradient boosting) to structured tabular data.
 2. Interpret model predictions and extract insights from feature importance analysis.

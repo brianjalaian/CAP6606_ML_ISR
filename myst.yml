@@ -1,36 +1,33 @@
-# MyST configuration for CAP 6606 course book
+# MyST configuration
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 
 project:
-  title: "CAP 6606 – Machine Learning for Intelligent Systems & Robotics"
-  description: "Graduate course e-book for intelligent systems and robotics at the University of West Florida."
+  title: "Machine Learning for Intelligent Systems & Robotics"
+  description: "An interactive guide to machine learning for intelligent systems and robotics."
   authors:
     - name: Dr. Brian Jalaian
-      affiliation: University of West Florida
   github: https://github.com/brianjalaian/CAP6606_ML_ISR
   exclude:
     - README.md
     - _build/**
     - .venv/**
   toc:
-    - file: intro
-    - title: Course Modules
+    - file: intro.md
+    - title: "Module 1: Ensemble Methods"
       children:
-        - file: notebooks/01_random_forests_tabular
-    - title: Lectures
-      children:
-        - file: lectures/lectures
+        - file: modules/01_ensemble_methods/index.md
+        - file: notebooks/01_ensemble_methods.ipynb
+    # Add more modules:
+    # - title: "Module 2: Neural Networks"
+    #   children:
+    #     - file: modules/02_neural_networks/index.md
+    #     - file: notebooks/02_nn_basics.ipynb
 
 site:
   template: book-theme
   options:
     favicon: assets/favicon.png
-    logo: assets/uwf-logo.png
+    logo: assets/headshot.jpg
+    logo_url: https://www.brianjalaian.com
 
-repository:
-  url: https://github.com/brianjalaian/CAP6606_ML_ISR
-  branch: main
-
-launch_buttons:
-  colab_url: "https://colab.research.google.com"
