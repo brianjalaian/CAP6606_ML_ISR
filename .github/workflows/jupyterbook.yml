@@ -1,3 +1,4 @@
+# Jupyter Book (via MyST) GitHub Pages Deploy
 name: Deploy Jupyter Book
 
 on:
@@ -5,44 +6,45 @@ on:
     branches: [main]
   workflow_dispatch:
 
+env:
+  BASE_URL: /${{ github.event.repository.name }}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
 jobs:
-  build-and-deploy:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - uses: actions/setup-node@v4
         with:
-          python-version: '3.11'
+          node-version: 18.x
 
-      - name: Install Jupyter Book
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install jupyter-book
+      - name: Install Jupyter Book (via MyST)
+        run: npm install -g jupyter-book
 
-      - name: Sync MyST configuration
-        run: cp myst.yml _config.yml
+      - name: Build HTML Assets
+        run: jupyter-book build --html
 
-      - name: Build book
-        run: jupyter-book build .
-
-      - name: Upload build artifact
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _build/html
+          path: './_build/html'
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: \
-            ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: _build/html
-          force_orphan: true
+        id: deployment
+        uses: actions/deploy-pages@v4

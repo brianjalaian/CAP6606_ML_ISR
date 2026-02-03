@@ -1,81 +1,36 @@
-# Primary MyST configuration for CAP 6606 course book
-# `_config.yml` is auto-synced from this file for sphinx compatibility.
-
+# MyST configuration for CAP 6606 course book
+# See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 
-title: "CAP 6606 – Machine Learning for Intelligent Systems & Robotics"
-author: "Dr. Brian Jalaian, University of West Florida"
-description: "Graduate course e-book for intelligent systems and robotics at the University of West Florida."
-logo: assets/uwf-logo.png
-favicon: assets/favicon.png
-language: en
-copyright: "2025, University of West Florida"
+project:
+  title: "CAP 6606 – Machine Learning for Intelligent Systems & Robotics"
+  description: "Graduate course e-book for intelligent systems and robotics at the University of West Florida."
+  authors:
+    - name: Dr. Brian Jalaian
+      affiliation: University of West Florida
+  github: https://github.com/brianjalaian/CAP6606_ML_ISR
+  exclude:
+    - README.md
+    - _build/**
+    - .venv/**
+  toc:
+    - file: intro
+    - title: Course Modules
+      children:
+        - file: notebooks/01_random_forests_tabular
+    - title: Lectures
+      children:
+        - file: lectures/lectures
 
-only_build_toc_files: true
+site:
+  template: book-theme
+  options:
+    favicon: assets/favicon.png
+    logo: assets/uwf-logo.png
 
 repository:
   url: https://github.com/brianjalaian/CAP6606_ML_ISR
-  path_to_book: ""
   branch: main
 
-latex:
-  latex_engine: pdflatex
-
-execute:
-  execute_notebooks: off
-  timeout: 180
-
-parse:
-  myst_enable_extensions:
-    - colon_fence
-    - dollarmath
-    - deflist
-    - html_image
-
 launch_buttons:
-  colab_url: https://colab.research.google.com
-  binderhub_url: ""
-  thebe: false
-  notebook_interface: classic
-
-html:
-  use_repository_button: true
-  use_issues_button: true
-  use_edit_page_button: true
-  navbar_number_sections: true
-  baseurl: https://brianjalaian.github.io/CAP6606_ML_ISR/
-  home_page_in_toc: true
-  theme:
-    name: sphinx_book_theme
-    options:
-      repository_url: https://github.com/brianjalaian/CAP6606_ML_ISR
-      path_to_docs: ""
-      extra_navbar: |
-        <div class="uwf-navbar">
-          <a class="uwf-button" href="https://colab.research.google.com/github/brianjalaian/CAP6606_ML_ISR" target="_blank" rel="noopener">Open in Colab</a>
-        </div>
-      extra_footer: |
-        <div class="uwf-footer">© University of West Florida · Intelligent Systems & Robotics</div>
-      home_page_in_toc: true
-      use_repository_button: true
-      use_issues_button: true
-      show_navbar_depth: 2
-      style_nav_header_background: "#0C2340"
-      announcement: "Now available: CAP 6606 course notebook suite."
-      toc_title: "Weekly Modules"
-  navbar_end:
-    - navbar-icon-buttons
-  footer_items:
-    - copyright
-    - last-updated
-
-sphinx:
-  config:
-    html_static_path: ["_static"]
-    html_css_files:
-      - custom.css
-    myst_heading_anchors: 2
-    exclude_patterns:
-      - ".venv/**"
-      - "_build/**"
-      - "build.log"
+  colab_url: "https://colab.research.google.com"
