@@ -49,3 +49,4 @@ Open http://localhost:3000 in your browser.
 Push to `main` triggers GitHub Actions which builds and deploys to GitHub Pages automatically.
 
 Live site: https://brianjalaian.github.io/CAP6606_ML_ISR/
+
