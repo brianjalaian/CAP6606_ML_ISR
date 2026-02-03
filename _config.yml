@@ -1,6 +1,8 @@
 # Primary MyST configuration for CAP 6606 course book
 # `_config.yml` is auto-synced from this file for sphinx compatibility.
 
+version: 1
+
 title: "CAP 6606 – Machine Learning for Intelligent Systems & Robotics"
 author: "Dr. Brian Jalaian, University of West Florida"
 description: "Graduate course e-book for intelligent systems and robotics at the University of West Florida."
