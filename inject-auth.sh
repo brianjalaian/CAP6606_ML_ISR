@@ -9,8 +9,8 @@ cp auth.html "$BUILD_DIR/"
 
 echo "Injecting authentication scripts into HTML files..."
 
-# Find all HTML files and inject scripts
-find "$BUILD_DIR" -name "*.html" -type f | while read -r file; do
+# Find all HTML files and inject scripts (skip auth.html which already has them)
+find "$BUILD_DIR" -name "*.html" -type f ! -name "auth.html" | while read -r file; do
   echo "Processing: $file"
 
   # Create a temp file for the modified content

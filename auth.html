@@ -109,15 +109,15 @@
       if (e.key === 'Enter') submitPromo();
     });
 
-    // Wait for Netlify Identity
+    // Register event handlers
     netlifyIdentity.on('init', user => {
+      console.log('Init event fired with user:', user);
       loading.style.display = 'none';
       checkUser(user);
     });
 
     netlifyIdentity.on('login', user => {
       console.log('Login event fired', user);
-      // Close the widget and check user
       netlifyIdentity.close();
       checkUser(user);
     });
@@ -129,10 +129,8 @@
       authStatus.textContent = '';
     });
 
-    // Re-check when widget closes (user might have just logged in)
     netlifyIdentity.on('close', () => {
-      console.log('Widget closed, waiting then re-checking user');
-      // Wait a moment for the login to complete, then check
+      console.log('Widget closed, re-checking user');
       setTimeout(() => {
         const user = netlifyIdentity.currentUser();
         console.log('Current user after close:', user);
@@ -140,8 +138,19 @@
       }, 500);
     });
 
-    // IMPORTANT: Initialize Netlify Identity to process OAuth callbacks
+    // Initialize Netlify Identity
     netlifyIdentity.init();
+
+    // Fallback: if init event already fired before we registered,
+    // check currentUser directly after a short delay
+    setTimeout(() => {
+      if (loading.style.display !== 'none') {
+        console.log('Init event may have been missed, checking currentUser directly');
+        loading.style.display = 'none';
+        const user = netlifyIdentity.currentUser();
+        checkUser(user);
+      }
+    }, 2000);
 
     function checkUser(user) {
       console.log('checkUser called with:', user);
