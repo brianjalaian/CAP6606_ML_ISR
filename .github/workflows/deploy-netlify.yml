@@ -23,9 +23,6 @@ jobs:
       - name: Build site
         run: jupyter-book build --html
 
-      - name: Inject authentication
-        run: ./inject-auth.sh
-
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3.0
         with:
@@ -34,7 +31,6 @@ jobs:
           production-deploy: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
           deploy-message: "Deploy from GitHub Actions - ${{ github.sha }}"
-          functions-dir: './netlify/functions'
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
