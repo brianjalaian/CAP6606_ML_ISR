@@ -23,10 +23,8 @@ jobs:
       - name: Build site
         run: jupyter-book build --html
 
-      - name: Copy Netlify files to build output
-        run: |
-          cp login.html _build/html/
-          cp promo.html _build/html/
+      - name: Inject authentication
+        run: ./inject-auth.sh
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3.0
