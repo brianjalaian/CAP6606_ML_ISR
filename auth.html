@@ -131,10 +131,17 @@
     netlifyIdentity.on('close', () => {
       console.log('Widget closed, re-checking user');
       const user = netlifyIdentity.currentUser();
+      console.log('Current user after close:', user);
       checkUser(user);
     });
 
+    // IMPORTANT: Initialize Netlify Identity to process OAuth callbacks
+    netlifyIdentity.init({
+      container: '#netlify-modal' // optional container
+    });
+
     function checkUser(user) {
+      console.log('checkUser called with:', user);
       if (!user) {
         loginBtn.style.display = 'block';
         return;
