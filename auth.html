@@ -116,6 +116,7 @@
     });
 
     netlifyIdentity.on('login', user => {
+      console.log('Login event fired', user);
       checkUser(user);
     });
 
@@ -124,6 +125,13 @@
       promoSection.style.display = 'none';
       logoutSection.style.display = 'none';
       authStatus.textContent = '';
+    });
+
+    // Re-check when widget closes (user might have just logged in)
+    netlifyIdentity.on('close', () => {
+      console.log('Widget closed, re-checking user');
+      const user = netlifyIdentity.currentUser();
+      checkUser(user);
     });
 
     function checkUser(user) {
