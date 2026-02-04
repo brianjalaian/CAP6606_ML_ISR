@@ -117,6 +117,8 @@
 
     netlifyIdentity.on('login', user => {
       console.log('Login event fired', user);
+      // Close the widget and check user
+      netlifyIdentity.close();
       checkUser(user);
     });
 
@@ -129,16 +131,17 @@
 
     // Re-check when widget closes (user might have just logged in)
     netlifyIdentity.on('close', () => {
-      console.log('Widget closed, re-checking user');
-      const user = netlifyIdentity.currentUser();
-      console.log('Current user after close:', user);
-      checkUser(user);
+      console.log('Widget closed, waiting then re-checking user');
+      // Wait a moment for the login to complete, then check
+      setTimeout(() => {
+        const user = netlifyIdentity.currentUser();
+        console.log('Current user after close:', user);
+        checkUser(user);
+      }, 500);
     });
 
     // IMPORTANT: Initialize Netlify Identity to process OAuth callbacks
-    netlifyIdentity.init({
-      container: '#netlify-modal' // optional container
-    });
+    netlifyIdentity.init();
 
     function checkUser(user) {
       console.log('checkUser called with:', user);
