@@ -25,7 +25,6 @@ jobs:
 
       - name: Copy Netlify files to build output
         run: |
-          cp _redirects _build/html/
           cp login.html _build/html/
           cp promo.html _build/html/
 

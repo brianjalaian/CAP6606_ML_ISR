@@ -5,25 +5,68 @@
 [build.environment]
   NODE_VERSION = "18"
 
-# Redirect rules (also in _redirects, but toml takes precedence)
+# Role-based access control
+# Pattern: First rule allows users WITH 'promo' role, second rule redirects everyone else to login
+# force = true is required on BOTH rules to override static files
+
+# Protect module pages
+[[redirects]]
+  from = "/module-1-ensemble-methods/*"
+  to = "/module-1-ensemble-methods/:splat"
+  status = 200
+  force = true
+  conditions = {Role = ["promo"]}
+
+[[redirects]]
+  from = "/module-1-ensemble-methods/*"
+  to = "/login.html"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/ensemble-methods-for-tabular-data/*"
+  to = "/ensemble-methods-for-tabular-data/:splat"
+  status = 200
+  force = true
+  conditions = {Role = ["promo"]}
+
+[[redirects]]
+  from = "/ensemble-methods-for-tabular-data/*"
+  to = "/login.html"
+  status = 302
+  force = true
+
+# Protect notebook content
+[[redirects]]
+  from = "/notebooks/*"
+  to = "/notebooks/:splat"
+  status = 200
+  force = true
+  conditions = {Role = ["promo"]}
+
 [[redirects]]
   from = "/notebooks/*"
   to = "/login.html"
+  status = 302
+  force = true
+
+# Protect JSON content (MyST SPA loads content via JSON)
+[[redirects]]
+  from = "/content/*"
+  to = "/content/:splat"
   status = 200
   force = true
-  conditions = {Role = ["promo", "authenticated"]}
+  conditions = {Role = ["promo"]}
 
 [[redirects]]
-  from = "/modules/*"
+  from = "/content/*"
   to = "/login.html"
-  status = 200
+  status = 302
   force = true
-  conditions = {Role = ["promo", "authenticated"]}
 
-# Headers for security
+# Headers
 [[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin"
