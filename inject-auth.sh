@@ -3,8 +3,9 @@
 
 BUILD_DIR="_build/html"
 
-# Copy auth-gate.js to build output
+# Copy auth files to build output
 cp auth-gate.js "$BUILD_DIR/"
+cp auth.html "$BUILD_DIR/"
 
 echo "Injecting authentication scripts into HTML files..."
 

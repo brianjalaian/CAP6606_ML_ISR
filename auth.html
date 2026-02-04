@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Machine Learning Course</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #1a1a2e;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      background: #16213e;
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    h1 { color: #fff; margin-bottom: 10px; font-size: 24px; }
+    .subtitle { color: #a0a0a0; margin-bottom: 30px; }
+    #auth-status { color: #10b981; margin-bottom: 20px; min-height: 24px; }
+    .btn {
+      background: #4f46e5;
+      color: white;
+      border: none;
+      padding: 12px 32px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .btn:hover { background: #4338ca; }
+    .btn-green { background: #10b981; }
+    .btn-green:hover { background: #059669; }
+    .btn:disabled { opacity: 0.6; cursor: not-allowed; }
+    #promo-section { display: none; margin-top: 20px; }
+    #promo-input {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #333;
+      border-radius: 6px;
+      background: #0f0f23;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    #promo-error { color: #ef4444; margin-top: 10px; display: none; }
+    #logout-section { display: none; margin-top: 15px; }
+    #logout-section a { color: #a0a0a0; font-size: 14px; }
+    .loading { color: #a0a0a0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Machine Learning for Intelligent Systems</h1>
+    <p class="subtitle">Please log in to access course content</p>
+
+    <div id="auth-status"></div>
+
+    <div id="loading" class="loading">Checking authentication...</div>
+
+    <button id="login-btn" class="btn" style="display: none;">
+      Log In / Sign Up
+    </button>
+
+    <div id="promo-section">
+      <p style="color: #a0a0a0; margin-bottom: 10px;">Enter your access code:</p>
+      <input type="text" id="promo-input" placeholder="e.g., UWF-ML2026">
+      <button id="promo-btn" class="btn btn-green">Activate Access</button>
+      <p id="promo-error"></p>
+    </div>
+
+    <div id="logout-section">
+      <a href="#" id="logout-link">Log out</a>
+    </div>
+  </div>
+
+  <script>
+    const loginBtn = document.getElementById('login-btn');
+    const promoSection = document.getElementById('promo-section');
+    const promoInput = document.getElementById('promo-input');
+    const promoBtn = document.getElementById('promo-btn');
+    const promoError = document.getElementById('promo-error');
+    const authStatus = document.getElementById('auth-status');
+    const logoutSection = document.getElementById('logout-section');
+    const loading = document.getElementById('loading');
+
+    // Get the return URL (where to go after auth)
+    const params = new URLSearchParams(window.location.search);
+    const returnUrl = params.get('return') || '/';
+
+    loginBtn.addEventListener('click', () => netlifyIdentity.open());
+    document.getElementById('logout-link').addEventListener('click', (e) => {
+      e.preventDefault();
+      netlifyIdentity.logout();
+    });
+
+    promoBtn.addEventListener('click', submitPromo);
+    promoInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') submitPromo();
+    });
+
+    // Wait for Netlify Identity
+    netlifyIdentity.on('init', user => {
+      loading.style.display = 'none';
+      checkUser(user);
+    });
+
+    netlifyIdentity.on('login', user => {
+      checkUser(user);
+    });
+
+    netlifyIdentity.on('logout', () => {
+      loginBtn.style.display = 'block';
+      promoSection.style.display = 'none';
+      logoutSection.style.display = 'none';
+      authStatus.textContent = '';
+    });
+
+    function checkUser(user) {
+      if (!user) {
+        loginBtn.style.display = 'block';
+        return;
+      }
+
+      const roles = user.app_metadata?.roles || [];
+      if (roles.includes('promo')) {
+        // User has access - redirect to content
+        window.location.href = returnUrl;
+      } else {
+        // Logged in but needs promo code
+        loginBtn.style.display = 'none';
+        authStatus.textContent = 'Logged in as ' + user.email;
+        promoSection.style.display = 'block';
+        logoutSection.style.display = 'block';
+      }
+    }
+
+    async function submitPromo() {
+      const code = promoInput.value.trim();
+      if (!code) {
+        promoError.textContent = 'Please enter an access code';
+        promoError.style.display = 'block';
+        return;
+      }
+
+      promoBtn.textContent = 'Verifying...';
+      promoBtn.disabled = true;
+      promoError.style.display = 'none';
+
+      try {
+        const user = netlifyIdentity.currentUser();
+        const token = await user.jwt();
+
+        const response = await fetch('/.netlify/functions/validate-code', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + token
+          },
+          body: JSON.stringify({ code })
+        });
+
+        const result = await response.json();
+
+        if (response.ok && result.success) {
+          promoBtn.textContent = 'Success! Redirecting...';
+          // Redirect to content after brief delay
+          setTimeout(() => {
+            window.location.href = returnUrl;
+          }, 1000);
+        } else {
+          promoError.textContent = result.error || 'Invalid code';
+          promoError.style.display = 'block';
+          promoBtn.textContent = 'Activate Access';
+          promoBtn.disabled = false;
+        }
+      } catch (err) {
+        promoError.textContent = 'Error. Please try again.';
+        promoError.style.display = 'block';
+        promoBtn.textContent = 'Activate Access';
+        promoBtn.disabled = false;
+      }
+    }
+  </script>
+</body>
+</html>
