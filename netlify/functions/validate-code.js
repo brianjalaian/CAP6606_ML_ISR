@@ -55,8 +55,20 @@ exports.handler = async (event, context) => {
 
   // Code is valid - update user's role to 'promo'
   try {
+    console.log('Identity context:', JSON.stringify({ identity, user }, null, 2));
+
+    if (!identity || !identity.url || !identity.token) {
+      console.error('Missing identity context. Identity:', identity);
+      return {
+        statusCode: 500,
+        body: JSON.stringify({ error: 'Identity service not configured properly.' })
+      };
+    }
+
     const adminUrl = identity.url;
     const adminToken = identity.token;
+
+    console.log('Making request to:', `${adminUrl}/admin/users/${user.sub}`);
 
     // Update user's app_metadata to add 'promo' role
     const response = await fetch(`${adminUrl}/admin/users/${user.sub}`, {
