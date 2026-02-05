@@ -10,7 +10,7 @@ __pycache__/
 *.pyc
 
 # Resources (copyrighted materials)
-resources/
+resource/
 
 # macOS
 .DS_Store
