@@ -12,7 +12,7 @@ This module covers ensemble learning techniques—combining multiple models to a
 
 ## Slides
 
-📊 [View Lecture Slides](https://brianjalaian.github.io/markdown-slides/lecture_random_forests.html)
+📊 [View Lecture Slides](https://brianjalaian.github.io/markdown-slides/ensemble-methods/)
 
 ## Prerequisites
 
