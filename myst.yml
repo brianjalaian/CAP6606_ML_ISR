@@ -17,7 +17,11 @@ project:
     - title: "Module 1: Ensemble Methods"
       children:
         - file: modules/01_ensemble_methods/index.md
+          title: "Overview"
         - file: notebooks/01_ensemble_methods.ipynb
+          title: "Theory & Fundamentals"
+        - file: notebooks/01b_ensemble_fraud_detection.ipynb
+          title: "Applied: Fraud Detection"
     # Add more modules:
     # - title: "Module 2: Neural Networks"
     #   children:

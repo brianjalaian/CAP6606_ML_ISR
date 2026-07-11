@@ -12,5 +12,37 @@ __pycache__/
 # Resources (copyrighted materials)
 resource/
 
+# Large data files (stay local only)
+notebooks/*.csv
+notebooks/*.parquet
+notebooks/*.feather
+notebooks/*.h5
+notebooks/*.hdf5
+
 # macOS
 .DS_Store
+
+# Environment variables (API keys, secrets — never commit)
+.env
+.env.*
+!.env.example
+
+# Claude Code local-only settings (may contain MCP API keys)
+.claude/settings.local.json
+.mcp.json
+
+# Internal planning notes (never deployed)
+PLAN.md
+
+# Playwright MCP browser artifacts (screenshots, console logs)
+.playwright-mcp/
+
+# Slide debug screenshots dropped at repo root by Playwright MCP
+# Always clean up after a slide-verification session
+*.png
+!assets/*.png
+
+# Editor / IDE workspaces
+.obsidian/
+.vscode/
+.idea/
