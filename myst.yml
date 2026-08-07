@@ -22,7 +22,15 @@ project:
           title: "Theory & Fundamentals"
         - file: notebooks/01b_ensemble_fraud_detection.ipynb
           title: "Applied: Fraud Detection"
-    - title: "Module 2: Large Language Models"
+    - title: "Module 2: Neural Networks"
+      children:
+        - file: modules/02_neural_networks/index.md
+          title: "Overview"
+        - file: notebooks/02_neural_networks.ipynb
+          title: "Theory & Fundamentals"
+        - file: notebooks/02b_neural_network_digit_recognition.ipynb
+          title: "Applied: Digit Recognition"
+    - title: "Module 3: Large Language Models"
       children:
         - file: modules/02-LLM/00-toc-llm.md
           title: "Overview"
@@ -38,15 +46,10 @@ project:
           title: "Finetuning for Classification"
         - file: modules/02-LLM/06_finetuning_instructions.ipynb
           title: "Instruction Finetuning"
-    # Add more modules:
-    # - title: "Module 2: Neural Networks"
-    #   children:
-    #     - file: modules/02_neural_networks/index.md
-    #     - file: notebooks/02_nn_basics.ipynb
 
 site:
   template: book-theme
   options:
     favicon: assets/favicon.png
-    logo: assets/small-lowres-2000pix.jpg
+    logo: assets/headshot.jpg
     logo_url: https://www.brianjalaian.com
