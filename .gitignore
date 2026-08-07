@@ -41,7 +41,7 @@ PLAN.md
 # Always clean up after a slide-verification session
 *.png
 !assets/*.png
-!modules/02-LLM/**/*.png
+!modules/**/*.png
 
 # Editor / IDE workspaces
 .obsidian/

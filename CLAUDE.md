@@ -137,6 +137,18 @@ Has access to WebSearch, WebFetch, Read (the Raschka PDF in `resource/`), Brave 
 
 ## Current Modules
 
+Modules 1–9 follow Raschka & Mirjalili chapters 1–9 one-to-one; each module dir under `modules/` holds the overview page, the annotated chapter notebook (`chXX-BAJ.ipynb`), referenced `figures/`, small data files, and lecture-note PDFs synced from Google Drive (`~/Library/CloudStorage/GoogleDrive-bjalaian@uwf.edu/My Drive/Teaching/Teaching-ML-MainRepo-Live/lecture/`).
+
 | # | Topic | Status |
 |---|-------|--------|
-| 01 | Ensemble Methods | Complete (theory + fraud detection case study + scripts) |
+| 01 | Introduction to ML (ch01) | Chapter notebook + lecture notes |
+| 02 | Linear Classifiers (ch02) | Chapter notebook + slides + math notes |
+| 03 | ML Classifiers with Scikit-Learn (ch03) | Chapter notebook + lecture/math notes |
+| 04 | Data Preprocessing (ch04) | Chapter notebook + lecture/math notes |
+| 05 | Dimensionality Reduction (ch05) | Chapter notebook + extra example + lecture/math notes |
+| 06 | Model Evaluation & Tuning (ch06) | Chapter notebook + lecture notes |
+| 07 | Ensemble Methods (ch07) | Complete (theory + fraud detection case study + chapter notebook + scripts) |
+| 08 | Sentiment Analysis (ch08) | Chapter notebook (IMDb data downloaded by notebook, not in repo) |
+| 09 | Regression Analysis (ch09) | Chapter notebook + lecture notes |
+| 10 | Neural Networks | Theory + applied notebooks |
+| 11 | Large Language Models | Student-contributed lecture notebooks (6 parts) |

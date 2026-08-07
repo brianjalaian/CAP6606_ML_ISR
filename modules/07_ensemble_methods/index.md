@@ -1,4 +1,4 @@
-# Module 1: Ensemble Methods
+# Module 7: Ensemble Methods
 
 This module covers ensemble learning techniques—combining multiple models to achieve better predictive performance than any single model alone.
 
@@ -14,8 +14,18 @@ This module covers ensemble learning techniques—combining multiple models to a
 
 📊 [View Lecture Slides](https://brianjalaian.github.io/markdown-slides/ensemble-methods/)
 
+## Lecture Materials
+
+- 📝 [Lecture Notes (PDF)](M7-Lecture_Note.pdf)
+- 🧮 [Math Notes (PDF)](M7-Math_Note.pdf)
+- 📓 Chapter notebook: *Combining Different Models for Ensemble Learning*
+
 ## Prerequisites
 
 - Basic Python and pandas
 - Familiarity with train/test splits
 - Understanding of overfitting vs underfitting
+
+## Reference
+
+Raschka & Mirjalili, *Machine Learning with PyTorch and Scikit-Learn*, Chapter 7.
