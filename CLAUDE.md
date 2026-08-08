@@ -148,7 +148,14 @@ Modules 1–9 follow Raschka & Mirjalili chapters 1–9 one-to-one; each module 
 | 05 | Dimensionality Reduction (ch05) | Chapter notebook + extra example + lecture/math notes |
 | 06 | Model Evaluation & Tuning (ch06) | Chapter notebook + lecture notes |
 | 07 | Ensemble Methods (ch07) | Complete (theory + fraud detection case study + chapter notebook + scripts) |
-| 08 | Sentiment Analysis (ch08) | Chapter notebook (IMDb data downloaded by notebook, not in repo) |
+| 08 | Sentiment Analysis (ch08) | UWFLecture notebook (IMDb data downloaded by notebook, not in repo) |
 | 09 | Regression Analysis (ch09) | Chapter notebook + lecture notes |
-| 10 | Neural Networks | Theory + applied notebooks |
-| 11 | Large Language Models | Student-contributed lecture notebooks (6 parts) |
+| 10 | Neural Networks (ch11) | Theory + applied notebooks + chapter notebook + lecture notes |
+| 11 | PyTorch (ch12–13) | Four UWFLecture notebooks + slides |
+| 12 | CNN (ch14) | UWFLecture notebook + slides |
+| 13 | RNN (ch15) | UWFLecture notebook + slides |
+| 14 | Transformers (ch16) | UWFLecture notebook + slides |
+| 15 | Reinforcement Learning (ch19) | Lecture notebook + slides |
+| 16 | Large Language Models | Student-contributed lecture notebooks (6 parts) |
+
+Modules 10–15 source from `~/Library/CloudStorage/GoogleDrive-bjalaian@uwf.edu/My Drive/Teaching/ML-DL-LectureHub/ModuleXX-*/` (UWFLecture notebooks + slide PDFs).

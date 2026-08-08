@@ -14,8 +14,10 @@ This module develops multilayer perceptrons from first principles: nonlinear rep
 ## Lecture Materials
 
 - 📊 [View lecture slides](https://brianjalaian.github.io/markdown-slides/neural-networks/)
+- 📝 [Lecture Notes (PDF)](M10-Lecture_Note.pdf)
 - 📓 [Theory & fundamentals notebook](../../notebooks/02_neural_networks.ipynb)
 - 🔢 [Applied notebook: handwritten digit recognition](../../notebooks/02b_neural_network_digit_recognition.ipynb)
+- 📔 Chapter notebook: *Implementing a Multilayer Artificial Neural Network from Scratch* (ch11)
 
 ## Local Preview
 

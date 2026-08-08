@@ -66,7 +66,7 @@ project:
       children:
         - file: modules/08_sentiment_analysis/index.md
           title: "Overview"
-        - file: modules/08_sentiment_analysis/ch08-BAJ.ipynb
+        - file: modules/08_sentiment_analysis/ch08-UWFLecture.ipynb
           title: "Chapter Notebook"
     - title: "Module 9: Regression Analysis"
       children:
@@ -82,21 +82,59 @@ project:
           title: "Theory & Fundamentals"
         - file: notebooks/02b_neural_network_digit_recognition.ipynb
           title: "Applied: Digit Recognition"
-    - title: "Module 11: Large Language Models"
+        - file: modules/10_neural_networks/ch11-UWFLecture.ipynb
+          title: "Chapter Notebook"
+    - title: "Module 11: PyTorch"
       children:
-        - file: modules/11_llm/00-toc-llm.md
+        - file: modules/11_pytorch/index.md
           title: "Overview"
-        - file: modules/11_llm/01_tokenization.ipynb
+        - file: modules/11_pytorch/ch12_part1-UWFLecture.ipynb
+          title: "PyTorch Fundamentals (Part 1)"
+        - file: modules/11_pytorch/ch12_part2-UWFLecture.ipynb
+          title: "PyTorch Fundamentals (Part 2)"
+        - file: modules/11_pytorch/ch13_part1-UWFLecture.ipynb
+          title: "Mechanics of PyTorch (Part 1)"
+        - file: modules/11_pytorch/ch13_part2-UWFLecture.ipynb
+          title: "Mechanics of PyTorch (Part 2)"
+    - title: "Module 12: Convolutional Neural Networks"
+      children:
+        - file: modules/12_cnn/index.md
+          title: "Overview"
+        - file: modules/12_cnn/ch14-UWFLecture.ipynb
+          title: "Chapter Notebook"
+    - title: "Module 13: Recurrent Neural Networks"
+      children:
+        - file: modules/13_rnn/index.md
+          title: "Overview"
+        - file: modules/13_rnn/ch15-UWFLectureCode.ipynb
+          title: "Chapter Notebook"
+    - title: "Module 14: Transformers"
+      children:
+        - file: modules/14_transformers/index.md
+          title: "Overview"
+        - file: modules/14_transformers/ch16-UWFCodeLecture.ipynb
+          title: "Chapter Notebook"
+    - title: "Module 15: Reinforcement Learning"
+      children:
+        - file: modules/15_rl/index.md
+          title: "Overview"
+        - file: modules/15_rl/RL-LectureCode.ipynb
+          title: "Lecture Notebook"
+    - title: "Module 16: Large Language Models"
+      children:
+        - file: modules/16_llm/00-toc-llm.md
+          title: "Overview"
+        - file: modules/16_llm/01_tokenization.ipynb
           title: "Tokenization"
-        - file: modules/11_llm/02_attention.ipynb
+        - file: modules/16_llm/02_attention.ipynb
           title: "Attention"
-        - file: modules/11_llm/03_architecture_gpt.ipynb
+        - file: modules/16_llm/03_architecture_gpt.ipynb
           title: "GPT Architecture"
-        - file: modules/11_llm/04_pretraining.ipynb
+        - file: modules/16_llm/04_pretraining.ipynb
           title: "Pretraining"
-        - file: modules/11_llm/05_finetuning_classification.ipynb
+        - file: modules/16_llm/05_finetuning_classification.ipynb
           title: "Finetuning for Classification"
-        - file: modules/11_llm/06_finetuning_instructions.ipynb
+        - file: modules/16_llm/06_finetuning_instructions.ipynb
           title: "Instruction Finetuning"
 
 site:
