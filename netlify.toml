@@ -3,6 +3,7 @@
 
 [build.environment]
   NODE_VERSION = "18"
+  BASE_URL = "https://courses.brianjalaian.com"
 
 # Security headers
 [[headers]]
