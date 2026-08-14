@@ -24,7 +24,7 @@ A guided tour of the workhorse classifiers in scikit-learn — how each one draw
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/CvqtggqihZs"
+  src="https://www.youtube-nocookie.com/embed/PaihJCoFg0Y"
   title="Introduction and Choosing a Classification Algorithm | CAP 6606 — Module 3, Part 1"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -37,7 +37,7 @@ A guided tour of the workhorse classifiers in scikit-learn — how each one draw
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/kHQ9vr8oM18"
+  src="https://www.youtube-nocookie.com/embed/03XZyTM9d0o"
   title="Training a Perceptron with Scikit-Learn | CAP 6606 — Module 3, Part 2"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -50,7 +50,7 @@ A guided tour of the workhorse classifiers in scikit-learn — how each one draw
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/Nl5YC2Iw2Jk"
+  src="https://www.youtube-nocookie.com/embed/VNb0GI17SNc"
   title="Logistic Regression | CAP 6606 — Module 3, Part 3"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -63,7 +63,7 @@ A guided tour of the workhorse classifiers in scikit-learn — how each one draw
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/-iOSRVqBkYM"
+  src="https://www.youtube-nocookie.com/embed/r9uUhKv6ipA"
   title="From Adaline to Logistic Regression: Training with Scikit-Learn | CAP 6606 — Module 3, Part 4"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -76,7 +76,7 @@ A guided tour of the workhorse classifiers in scikit-learn — how each one draw
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/fzTu5HLJWto"
+  src="https://www.youtube-nocookie.com/embed/wCispnVeEng"
   title="Key Concepts and Regularization | CAP 6606 — Module 3, Part 5"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -89,7 +89,7 @@ A guided tour of the workhorse classifiers in scikit-learn — how each one draw
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/A0r16hrOCxo"
+  src="https://www.youtube-nocookie.com/embed/XMl1p5nCrZA"
   title="Support Vector Machines and Kernel Methods | CAP 6606 — Module 3, Part 6"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -102,7 +102,7 @@ A guided tour of the workhorse classifiers in scikit-learn — how each one draw
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/3FmR76gqPuc"
+  src="https://www.youtube-nocookie.com/embed/h13TxmqPVwA"
   title="Decision Trees and Random Forests | CAP 6606 — Module 3, Part 7"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -115,7 +115,7 @@ A guided tour of the workhorse classifiers in scikit-learn — how each one draw
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/tDut4QsK-sw"
+  src="https://www.youtube-nocookie.com/embed/S6H6yX8arW4"
   title="K-Nearest Neighbors and Module Summary | CAP 6606 — Module 3, Part 8"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
