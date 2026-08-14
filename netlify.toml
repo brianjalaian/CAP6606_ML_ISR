@@ -1,5 +1,8 @@
 [build]
   publish = "_build/html"
+  # MyST's static export stamps sitemap/robots/canonical URLs with its
+  # ephemeral localhost preview server; rewrite them to the real domain.
+  command = "jupyter-book build --html && find _build/html -type f \\( -name '*.html' -o -name '*.xml' -o -name '*.txt' -o -name '*.json' \\) -exec sed -i 's|http://localhost:[0-9]*|https://courses.brianjalaian.com|g' {} +"
 
 [build.environment]
   NODE_VERSION = "18"

@@ -139,6 +139,8 @@ project:
 
 site:
   template: book-theme
+  domains:
+    - courses.brianjalaian.com
   options:
     favicon: assets/favicon.png
     logo: assets/headshot.jpg
