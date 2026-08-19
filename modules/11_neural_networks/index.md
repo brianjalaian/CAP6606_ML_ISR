@@ -1,4 +1,4 @@
-# Module 10: Neural Networks
+# Module 11: Neural Networks
 
 This module develops multilayer perceptrons from first principles: nonlinear representation learning, forward propagation, softmax cross-entropy, backpropagation, mini-batch optimization, initialization, normalization, regularization, and practical model diagnosis.
 

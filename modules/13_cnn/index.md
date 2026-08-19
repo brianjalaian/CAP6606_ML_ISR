@@ -1,4 +1,4 @@
-# Module 12: Convolutional Neural Networks
+# Module 13: Convolutional Neural Networks
 
 Deep learning for images. This module builds convolutional networks from the convolution operation up, and trains real image classifiers in PyTorch.
 

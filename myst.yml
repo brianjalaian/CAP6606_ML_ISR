@@ -74,67 +74,73 @@ project:
           title: "Overview"
         - file: modules/09_regression/ch09_BAJ.ipynb
           title: "Chapter Notebook"
-    - title: "Module 10: Neural Networks"
+    - title: "Module 10: Clustering"
       children:
-        - file: modules/10_neural_networks/index.md
+        - file: modules/10_clustering/index.md
+          title: "Overview"
+        - file: modules/10_clustering/ch10-UWFLecture.ipynb
+          title: "Chapter Notebook"
+    - title: "Module 11: Neural Networks"
+      children:
+        - file: modules/11_neural_networks/index.md
           title: "Overview"
         - file: notebooks/02_neural_networks.ipynb
           title: "Theory & Fundamentals"
         - file: notebooks/02b_neural_network_digit_recognition.ipynb
           title: "Applied: Digit Recognition"
-        - file: modules/10_neural_networks/ch11-UWFLecture.ipynb
+        - file: modules/11_neural_networks/ch11-UWFLecture.ipynb
           title: "Chapter Notebook"
-    - title: "Module 11: PyTorch"
+    - title: "Module 12: PyTorch"
       children:
-        - file: modules/11_pytorch/index.md
+        - file: modules/12_pytorch/index.md
           title: "Overview"
-        - file: modules/11_pytorch/ch12_part1-UWFLecture.ipynb
+        - file: modules/12_pytorch/ch12_part1-UWFLecture.ipynb
           title: "PyTorch Fundamentals (Part 1)"
-        - file: modules/11_pytorch/ch12_part2-UWFLecture.ipynb
+        - file: modules/12_pytorch/ch12_part2-UWFLecture.ipynb
           title: "PyTorch Fundamentals (Part 2)"
-        - file: modules/11_pytorch/ch13_part1-UWFLecture.ipynb
+        - file: modules/12_pytorch/ch13_part1-UWFLecture.ipynb
           title: "Mechanics of PyTorch (Part 1)"
-        - file: modules/11_pytorch/ch13_part2-UWFLecture.ipynb
+        - file: modules/12_pytorch/ch13_part2-UWFLecture.ipynb
           title: "Mechanics of PyTorch (Part 2)"
-    - title: "Module 12: Convolutional Neural Networks"
+    - title: "Module 13: Convolutional Neural Networks"
       children:
-        - file: modules/12_cnn/index.md
+        - file: modules/13_cnn/index.md
           title: "Overview"
-        - file: modules/12_cnn/ch14-UWFLecture.ipynb
+        - file: modules/13_cnn/ch14-UWFLecture.ipynb
           title: "Chapter Notebook"
-    - title: "Module 13: Recurrent Neural Networks"
+    - title: "Module 14: Recurrent Neural Networks"
       children:
-        - file: modules/13_rnn/index.md
+        - file: modules/14_rnn/index.md
           title: "Overview"
-        - file: modules/13_rnn/ch15-UWFLectureCode.ipynb
+        - file: modules/14_rnn/ch15-UWFLectureCode.ipynb
           title: "Chapter Notebook"
-    - title: "Module 14: Transformers"
+    - title: "Module 15: Transformers"
       children:
-        - file: modules/14_transformers/index.md
+        - file: modules/15_transformers/index.md
           title: "Overview"
-        - file: modules/14_transformers/ch16-UWFCodeLecture.ipynb
+        - file: modules/15_transformers/ch16-UWFCodeLecture.ipynb
           title: "Chapter Notebook"
-    - title: "Module 15: Reinforcement Learning"
+    - title: "Module 16: Reinforcement Learning"
       children:
-        - file: modules/15_rl/index.md
+        - file: modules/16_rl/index.md
           title: "Overview"
-        - file: modules/15_rl/RL-LectureCode.ipynb
+        - file: modules/16_rl/RL-LectureCode.ipynb
           title: "Lecture Notebook"
-    - title: "Module 16: Large Language Models"
+    - title: "Module 17: Large Language Models"
       children:
-        - file: modules/16_llm/00-toc-llm.md
+        - file: modules/17_llm/00-toc-llm.md
           title: "Overview"
-        - file: modules/16_llm/01_tokenization.ipynb
+        - file: modules/17_llm/01_tokenization.ipynb
           title: "Tokenization"
-        - file: modules/16_llm/02_attention.ipynb
+        - file: modules/17_llm/02_attention.ipynb
           title: "Attention"
-        - file: modules/16_llm/03_architecture_gpt.ipynb
+        - file: modules/17_llm/03_architecture_gpt.ipynb
           title: "GPT Architecture"
-        - file: modules/16_llm/04_pretraining.ipynb
+        - file: modules/17_llm/04_pretraining.ipynb
           title: "Pretraining"
-        - file: modules/16_llm/05_finetuning_classification.ipynb
+        - file: modules/17_llm/05_finetuning_classification.ipynb
           title: "Finetuning for Classification"
-        - file: modules/16_llm/06_finetuning_instructions.ipynb
+        - file: modules/17_llm/06_finetuning_instructions.ipynb
           title: "Instruction Finetuning"
 
 site:

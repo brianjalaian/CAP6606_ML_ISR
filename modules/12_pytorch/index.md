@@ -1,4 +1,4 @@
-# Module 11: PyTorch
+# Module 12: PyTorch
 
 The deep learning toolchain for the rest of the course. This module covers PyTorch from the ground up — tensors and data pipelines, then the mechanics of building, training, and structuring real models.
 

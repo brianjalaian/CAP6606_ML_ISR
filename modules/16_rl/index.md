@@ -1,4 +1,4 @@
-# Module 15: Reinforcement Learning
+# Module 16: Reinforcement Learning
 
 Learning from interaction rather than labeled examples. This module introduces the RL problem formulation and the core algorithms for learning decision-making policies.
 

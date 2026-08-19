@@ -1,4 +1,4 @@
-# Module 13: Recurrent Neural Networks
+# Module 14: Recurrent Neural Networks
 
 Modeling sequences — text, time series, and any data where order matters. This module covers recurrent architectures and their training dynamics, with applications to sentiment analysis and character-level text generation.
 

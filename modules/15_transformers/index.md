@@ -1,4 +1,4 @@
-# Module 14: Transformers
+# Module 15: Transformers
 
 The architecture behind modern NLP and large language models. This module develops attention from first principles through the full Transformer, and connects it to the pretrained models used in practice.
 
