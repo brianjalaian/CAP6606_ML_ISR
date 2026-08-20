@@ -5,7 +5,7 @@
 # domain after the build. Runs on top of the dashboard build command, so no
 # dashboard change is needed. See netlify/plugins/rewrite-localhost/.
 [[plugins]]
-  package = "/netlify/plugins/rewrite-localhost"
+  package = "./netlify/plugins/rewrite-localhost"
 
 [build.environment]
   NODE_VERSION = "18"
