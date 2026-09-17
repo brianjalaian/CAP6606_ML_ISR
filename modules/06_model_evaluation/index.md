@@ -15,7 +15,6 @@ Best practices for knowing whether your model is actually good: honest evaluatio
 - 📝 [Lecture Notes (PDF)](M6-Lecture_Note.pdf)
 - 📓 Chapter notebook: *Learning Best Practices for Model Evaluation and Hyperparameter Tuning*
 
-
 <!-- BEGIN YOUTUBE LECTURE VIDEOS -->
 ## Lecture Videos
 
@@ -24,7 +23,7 @@ Best practices for knowing whether your model is actually good: honest evaluatio
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/V6ceShpX_KU"
+  src="https://www.youtube-nocookie.com/embed/IhN41Rl-NXI"
   title="Introduction and Module Overview | CAP 6606 — Module 6, Part 1"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -37,7 +36,7 @@ Best practices for knowing whether your model is actually good: honest evaluatio
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/I53T__ksfsA"
+  src="https://www.youtube-nocookie.com/embed/bfnq9PILOW8"
   title="Streamlining Workflows with Pipelines | CAP 6606 — Module 6, Part 2"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -50,7 +49,7 @@ Best practices for knowing whether your model is actually good: honest evaluatio
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/n1q72CRoeAs"
+  src="https://www.youtube-nocookie.com/embed/U0MA4NMYR00"
   title="Holdout and K-Fold Cross-Validation | CAP 6606 — Module 6, Part 3"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -63,7 +62,7 @@ Best practices for knowing whether your model is actually good: honest evaluatio
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/cyexMrny5QQ"
+  src="https://www.youtube-nocookie.com/embed/XX_GTHf9U5s"
   title="Learning and Validation Curves | CAP 6606 — Module 6, Part 4"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -76,7 +75,7 @@ Best practices for knowing whether your model is actually good: honest evaluatio
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/Upn5HlW6Zto"
+  src="https://www.youtube-nocookie.com/embed/ptBQAkJYLLA"
   title="Hyperparameter Search with Grid and Randomized Search | CAP 6606 — Module 6, Part 5"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -89,7 +88,7 @@ Best practices for knowing whether your model is actually good: honest evaluatio
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/vmHJkF2rUr8"
+  src="https://www.youtube-nocookie.com/embed/kTnrj8GgDO8"
   title="Nested Cross-Validation for Algorithm Selection | CAP 6606 — Module 6, Part 6"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -102,7 +101,7 @@ Best practices for knowing whether your model is actually good: honest evaluatio
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/DmN1wRKxRCU"
+  src="https://www.youtube-nocookie.com/embed/Lysk0aZwXt4"
   title="The Confusion Matrix | CAP 6606 — Module 6, Part 7"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -115,7 +114,7 @@ Best practices for knowing whether your model is actually good: honest evaluatio
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/shTU32Oidmw"
+  src="https://www.youtube-nocookie.com/embed/H8EX1LPSqHU"
   title="Optimizing Precision and Recall | CAP 6606 — Module 6, Part 8"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -128,7 +127,7 @@ Best practices for knowing whether your model is actually good: honest evaluatio
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/MtkTtLWU6aU"
+  src="https://www.youtube-nocookie.com/embed/GwwHfNeB-dk"
   title="ROC Curves and AUC | CAP 6606 — Module 6, Part 9"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -141,7 +140,7 @@ Best practices for knowing whether your model is actually good: honest evaluatio
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/9RIRIyMzhzQ"
+  src="https://www.youtube-nocookie.com/embed/m6PpIzblcrs"
   title="Multiclass Metrics, Class Imbalance, and Summary | CAP 6606 — Module 6, Part 10"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
