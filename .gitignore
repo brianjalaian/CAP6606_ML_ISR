@@ -47,3 +47,12 @@ PLAN.md
 .obsidian/
 .vscode/
 .idea/
+
+# Local-only tooling and working files — this repo is PUBLIC.
+# These are untracked by intent; listing them here stops `git add -A`
+# from ever publishing them. `.codex/config.toml` holds a live API key.
+scripts/
+.codex/
+tmp/
+AGENTS.md
+HANDOFF.md
