@@ -23,6 +23,12 @@ jobs:
       - name: Build site
         run: jupyter-book build --html
 
+      # Netlify never builds this site -- the deploy below uploads _build/html
+      # directly -- so netlify.toml's [[plugins]] and [[redirects]] are never
+      # applied. Anything that must reach the live site happens here.
+      - name: Post-build fixes (canonical URLs, module redirects)
+        run: node netlify/postbuild.js _build/html
+
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3.0
         with:
