@@ -23,8 +23,13 @@ function rewriteDir(dir) {
       count += rewriteDir(full)
     } else if (EXTENSIONS.has(path.extname(entry.name))) {
       const original = fs.readFileSync(full, 'utf8')
-      if (LOCALHOST.test(original)) {
-        fs.writeFileSync(full, original.replace(LOCALHOST, SITE_URL))
+      // Do NOT use LOCALHOST.test() here: a /g regex keeps lastIndex between
+      // calls, so .test() alternates true/false across files and silently
+      // skips half of them -- which is why sitemap.xml kept shipping localhost
+      // URLs. Replace unconditionally and compare instead.
+      const rewritten = original.replace(LOCALHOST, SITE_URL)
+      if (rewritten !== original) {
+        fs.writeFileSync(full, rewritten)
         count += 1
       }
     }

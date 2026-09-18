@@ -16,3 +16,105 @@
   [headers.values]
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
+
+# The YouTube lecture descriptions (36 videos, Modules 1-6) link to
+# /modules/<dir>/, but MyST serves every module overview at /index-N because
+# all the pages are named index.md and it de-duplicates the slugs. Those links
+# are baked into published video descriptions, so redirect rather than reword
+# them. Nothing else is served under /modules/ (PDFs are hashed under /build/).
+[[redirects]]
+  from = "/modules/01_intro_ml/*"
+  to = "/index-1"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/modules/02_linear_classifiers/*"
+  to = "/index-2"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/modules/03_sklearn_classifiers/*"
+  to = "/index-3"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/modules/04_data_preprocessing/*"
+  to = "/index-4"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/modules/05_dimensionality_reduction/*"
+  to = "/index-5"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/modules/06_model_evaluation/*"
+  to = "/index-6"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/modules/07_ensemble_methods/*"
+  to = "/index-7"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/modules/08_sentiment_analysis/*"
+  to = "/index-8"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/modules/09_regression/*"
+  to = "/index-9"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/modules/10_clustering/*"
+  to = "/index-10"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/modules/11_neural_networks/*"
+  to = "/index-11"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/modules/12_pytorch/*"
+  to = "/index-12"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/modules/13_cnn/*"
+  to = "/index-13"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/modules/14_rnn/*"
+  to = "/index-14"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/modules/15_transformers/*"
+  to = "/index-15"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/modules/16_rl/*"
+  to = "/index-16"
+  status = 301
+  force = true
+
