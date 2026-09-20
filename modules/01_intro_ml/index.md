@@ -14,14 +14,15 @@ This module frames the whole course: what machine learning is, the three broad l
 - 📝 [Lecture Notes (PDF)](M1-Lecture_Note.pdf)
 - 📓 Chapter notebook: *Giving Computers the Ability to Learn from Data*
 
+<!-- BEGIN YOUTUBE LECTURE VIDEOS -->
 ## Lecture Videos
 
-### Part 1: Introduction and Types of Machine Learning
+### Part 1: Introduction and Types of Machine Learning | CAP 6606 — Module 1, Part 1
 
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/Gt2HaVZlkDY"
+  src="https://www.youtube-nocookie.com/embed/B_e76p1xVpQ"
   title="Introduction and Types of Machine Learning | CAP 6606 — Module 1, Part 1"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -29,12 +30,12 @@ This module frames the whole course: what machine learning is, the three broad l
   allowfullscreen>
 </iframe>
 
-### Part 2: Core Machine Learning Problems and Workflow
+### Part 2: Core Machine Learning Problems and Workflow | CAP 6606 — Module 1, Part 2
 
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/-S8-R8uoSD0"
+  src="https://www.youtube-nocookie.com/embed/86pisPSre18"
   title="Core Machine Learning Problems and Workflow | CAP 6606 — Module 1, Part 2"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -42,6 +43,7 @@ This module frames the whole course: what machine learning is, the three broad l
   allowfullscreen>
 </iframe>
 
+<!-- END YOUTUBE LECTURE VIDEOS -->
 ## Prerequisites
 
 - Basic Python

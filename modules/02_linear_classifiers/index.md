@@ -16,7 +16,6 @@ This module builds the first trainable models of the course from scratch: the pe
 - 🧮 [Math Notes (PDF)](M2-Math_Note.pdf)
 - 📓 Chapter notebook: *Training Simple Machine Learning Algorithms for Classification*
 
-
 <!-- BEGIN YOUTUBE LECTURE VIDEOS -->
 ## Lecture Videos
 
@@ -25,7 +24,7 @@ This module builds the first trainable models of the course from scratch: the pe
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/FmH2q4xgHLw"
+  src="https://www.youtube-nocookie.com/embed/TD7m-pUa5qY"
   title="Artificial Neurons and the Perceptron | CAP 6606 — Module 2, Part 1"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -38,7 +37,7 @@ This module builds the first trainable models of the course from scratch: the pe
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/wHVsobITb3I"
+  src="https://www.youtube-nocookie.com/embed/W0SAu4sqks4"
   title="Implementing a Perceptron in Python | CAP 6606 — Module 2, Part 2"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -51,7 +50,7 @@ This module builds the first trainable models of the course from scratch: the pe
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/V_d6KUJXOUU"
+  src="https://www.youtube-nocookie.com/embed/0I_MDK06WXM"
   title="Adaline and Gradient Descent | CAP 6606 — Module 2, Part 3"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -64,7 +63,7 @@ This module builds the first trainable models of the course from scratch: the pe
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/bPqMUs_9qA0"
+  src="https://www.youtube-nocookie.com/embed/SpMFAU8tRSM"
   title="Implementing Adaline and Feature Scaling | CAP 6606 — Module 2, Part 4"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -77,7 +76,7 @@ This module builds the first trainable models of the course from scratch: the pe
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/tTMu1_jJGjk"
+  src="https://www.youtube-nocookie.com/embed/gV8OSB5VW2Q"
   title="Batch, Stochastic, and Mini-Batch Gradient Descent | CAP 6606 — Module 2, Part 5"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
