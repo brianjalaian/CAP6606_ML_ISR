@@ -24,7 +24,7 @@ Models are only as good as the data they train on. This module covers building g
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/czH3i1l-eXc"
+  src="https://www.youtube-nocookie.com/embed/40bRhYYVSpw"
   title="Introduction, the Scikit-Learn API, and Missing Data | CAP 6606 — Module 4, Part 1"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -37,7 +37,7 @@ Models are only as good as the data they train on. This module covers building g
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/kHzzKlvorik"
+  src="https://www.youtube-nocookie.com/embed/LKuhqQFRt1E"
   title="Handling Categorical Data | CAP 6606 — Module 4, Part 2"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -50,7 +50,7 @@ Models are only as good as the data they train on. This module covers building g
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/0f7f18P1Psg"
+  src="https://www.youtube-nocookie.com/embed/Cnsxi5UnEzQ"
   title="Train/Test Splits and Feature Scaling | CAP 6606 — Module 4, Part 3"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -63,7 +63,7 @@ Models are only as good as the data they train on. This module covers building g
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/qiogfd-VsgA"
+  src="https://www.youtube-nocookie.com/embed/g7BPMFGU8wY"
   title="Selecting Meaningful Features and L1 Regularization | CAP 6606 — Module 4, Part 4"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -76,7 +76,7 @@ Models are only as good as the data they train on. This module covers building g
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/LdypyK3LioM"
+  src="https://www.youtube-nocookie.com/embed/TqSl65cam-U"
   title="Sequential Feature Selection and Feature Importance | CAP 6606 — Module 4, Part 5"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
