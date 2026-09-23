@@ -23,7 +23,7 @@ High-dimensional data is hard to visualize, slow to train on, and prone to overf
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/5D7NOefBBYs"
+  src="https://www.youtube-nocookie.com/embed/k5fZirrjarY"
   title="Introduction and Principal Component Analysis | CAP 6606 — Module 5, Part 1"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -36,7 +36,7 @@ High-dimensional data is hard to visualize, slow to train on, and prone to overf
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/MoQP9lqSDqg"
+  src="https://www.youtube-nocookie.com/embed/b3XlMkMVWdc"
   title="PCA Examples in Jupyter | CAP 6606 — Module 5, Part 2"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -49,7 +49,7 @@ High-dimensional data is hard to visualize, slow to train on, and prone to overf
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/7LsX0okz-Sw"
+  src="https://www.youtube-nocookie.com/embed/irOdKckgwkk"
   title="The Main Steps Behind PCA, Step by Step | CAP 6606 — Module 5, Part 3"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -62,7 +62,7 @@ High-dimensional data is hard to visualize, slow to train on, and prone to overf
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/47JAE9m1jvc"
+  src="https://www.youtube-nocookie.com/embed/Vti93dfCCnM"
   title="Supervised Compression with Linear Discriminant Analysis | CAP 6606 — Module 5, Part 4"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -75,7 +75,7 @@ High-dimensional data is hard to visualize, slow to train on, and prone to overf
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/Lsh8Kem3Br4"
+  src="https://www.youtube-nocookie.com/embed/6a8pDRTAjJM"
   title="The Inner Workings of LDA | CAP 6606 — Module 5, Part 5"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -88,7 +88,7 @@ High-dimensional data is hard to visualize, slow to train on, and prone to overf
 <iframe
   width="100%"
   style="aspect-ratio: 16 / 9;"
-  src="https://www.youtube-nocookie.com/embed/Z9M90Hnao0o"
+  src="https://www.youtube-nocookie.com/embed/tThOoG6g7PY"
   title="Nonlinear Dimensionality Reduction and t-SNE | CAP 6606 — Module 5, Part 6"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
