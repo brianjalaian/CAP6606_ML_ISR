@@ -1,0 +1,17 @@
+{
+  // Static-assets-only Worker: no `main`, so every request is served from the
+  // built directory. The site is built by CI (jupyter-book) and post-processed
+  // by netlify/postbuild.js, which also writes _build/html/_redirects.
+  "name": "cap6606-course",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./_build/html",
+    // MyST emits every page as <slug>/index.html and the canonical URLs carry a
+    // trailing slash, which is what auto-trailing-slash serves.
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

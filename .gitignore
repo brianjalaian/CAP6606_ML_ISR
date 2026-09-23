@@ -56,3 +56,6 @@ scripts/
 tmp/
 AGENTS.md
 HANDOFF.md
+
+# Wrangler's local state; the site is built by CI, not committed.
+.wrangler/

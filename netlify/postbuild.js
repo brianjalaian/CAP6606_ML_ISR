@@ -46,7 +46,12 @@ function rewriteLocalhost(dir) {
 function writeRedirects(dir) {
   const yml = fs.readFileSync('myst.yml', 'utf8')
   const dirs = [...yml.matchAll(/file: (modules\/[^/\s]+)\/index\.md/g)].map((m) => m[1])
-  const lines = dirs.map((d, i) => `/${d}/*  /index-${i + 1}  301!`)
+  // Plain `301`, not Netlify's forcing `301!`: Cloudflare's _redirects
+  // parser ignores any line it cannot parse, so the bang would silently
+  // drop every rule. Nothing is served at these paths anyway, and
+  // Cloudflare follows redirects whether or not an asset matches, so the
+  // force flag buys nothing on either platform.
+  const lines = dirs.map((d, i) => `/${d}/*  /index-${i + 1}  301`)
   fs.writeFileSync(path.join(dir, '_redirects'), lines.join('\n') + '\n')
   return dirs.length
 }

@@ -1,4 +1,4 @@
-name: Deploy to Netlify
+name: Deploy site
 
 on:
   push:
@@ -29,7 +29,17 @@ jobs:
       - name: Post-build fixes (canonical URLs, module redirects)
         run: node netlify/postbuild.js _build/html
 
-      - name: Deploy to Netlify
+      # Cloudflare is the real target. Netlify below is kept only until the
+      # custom domain moves, and is allowed to fail: its token has been
+      # returning Forbidden, and a dead deploy there must not fail the run.
+      - name: Deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Deploy to Netlify (legacy, until DNS moves)
+        continue-on-error: true
         uses: nwtgck/actions-netlify@v3.0
         with:
           publish-dir: './_build/html'
