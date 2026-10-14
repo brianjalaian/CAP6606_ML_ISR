@@ -11,6 +11,11 @@
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "none"
   },
+  // Keep the *.workers.dev URL alive alongside the custom domain(s).
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "courses.brianjalaian.com", "custom_domain": true }
+  ],
   "observability": {
     "enabled": true
   }
