@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 22
 
       - name: Install Jupyter Book
         run: npm install -g jupyter-book
@@ -37,6 +37,9 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # The action's default wrangler is too old for an assets-only Worker
+          # (no `main`) and fails with "Missing entry-point".
+          wranglerVersion: "4"
 
       - name: Deploy to Netlify (legacy, until DNS moves)
         continue-on-error: true
