@@ -8,6 +8,8 @@ project:
   authors:
     - name: Dr. Brian Jalaian
   github: https://github.com/brianjalaian/CAP6606_ML_ISR
+  plugins:
+    - plugins/details-math.mjs
   exclude:
     - README.md
     - _build/**
@@ -142,6 +144,23 @@ project:
           title: "Finetuning for Classification"
         - file: modules/17_llm/06_finetuning_instructions.ipynb
           title: "Instruction Finetuning"
+
+    - title: "Extended Materials"
+      children:
+        - file: modules/extended_materials/extended-materials.md
+          title: "Overview"
+        - file: modules/extended_materials/00_rnn_lstm_to_transformer.ipynb
+          title: "From RNN to LSTM to Transformer"
+        - file: modules/extended_materials/01_tokenization_clm_mlm.ipynb
+          title: "Tokenization and Embeddings"
+        - file: modules/extended_materials/02_self_and_cross_attention.ipynb
+          title: "Self-, Multi-Head and Cross-Attention"
+        - file: modules/extended_materials/03_gqa_kv_cache.ipynb
+          title: "KV Cache and GQA"
+        - file: modules/extended_materials/04_positional_encoding_rope.ipynb
+          title: "Positional Encoding: From Sinusoidal to RoPE"
+        - file: modules/extended_materials/05_gpt_vs_llama_vs_moe.ipynb
+          title: "GPT vs Llama vs MoE"
 
 site:
   template: book-theme
