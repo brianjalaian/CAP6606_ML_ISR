@@ -1,0 +1,8 @@
+{
+  "name": "cap6606-ml-isr",
+  "private": true,
+  "description": "Build dependencies for the course site's MyST plugin",
+  "devDependencies": {
+    "katex": "0.19.1"
+  }
+}

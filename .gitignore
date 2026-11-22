@@ -59,3 +59,6 @@ HANDOFF.md
 
 # Wrangler's local state; the site is built by CI, not committed.
 .wrangler/
+
+# MyST plugin dependencies from npm ci
+node_modules/

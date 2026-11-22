@@ -20,6 +20,9 @@ jobs:
       - name: Install Jupyter Book
         run: npm install -g jupyter-book
 
+      - name: Install MyST plugin dependencies
+        run: npm ci
+
       - name: Build site
         run: jupyter-book build --html
 
